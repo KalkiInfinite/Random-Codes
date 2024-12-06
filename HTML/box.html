@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Screen</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+        .container {
+            width: 80%;
+            height: 50vh;
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            position: absolute; /* Use absolute positioning */
+            top: 0; /* Adjust these values for different corners */
+            left: 0; /* Adjust these values for different corners */
+        }
+        .left {
+            background-color: red;
+            width: 50%;
+        }
+        .right {
+            background-color: blue;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
