@@ -1,0 +1,14 @@
+SEGMENT
+start:
+    MOV AH, 0EH
+    MOV AL, 'A'
+
+DISPLAY_LOOP:
+    INT 10H
+    INC AL
+    CMP AL, 'Z'
+    JBE DISPLAY_LOOP
+    JMP $
+
+ENDS
+END START

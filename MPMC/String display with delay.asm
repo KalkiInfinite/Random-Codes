@@ -1,0 +1,22 @@
+SEGMENT
+start:
+    MOV AH, 0EH
+    MOV AL, 'A'
+
+DISPLAY_LOOP:
+    INT 10H
+    CALL DELAY
+    INC AL
+    CMP AL, 'Z'
+    JBE DISPLAY_LOOP
+    JMP $
+
+DELAY:
+    MOV CX, 10
+DELAY_LOOP:
+    DEC CX
+    JNZ DELAY_LOOP
+    RET
+
+ENDS
+END START

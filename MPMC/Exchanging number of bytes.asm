@@ -1,0 +1,20 @@
+ORG 00H
+SJMP START
+ORG 30H
+
+START: 
+    MOV R0, #40H
+    MOV R1, #50H
+
+BACK: 
+    MOV R7, #0AH
+    MOV A, @R0
+    XCH A, @R1
+    MOV @R0, A
+    INC R0
+    INC R1
+    DJNZ R7, BACK
+
+HERE: 
+    SJMP HERE
+END
