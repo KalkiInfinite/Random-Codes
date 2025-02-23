@@ -6,12 +6,12 @@ This repo is a treasure chest of all my miscellaneous projects and experiments, 
 ---
 
 ## 🗂️ Contents
-- **Programming Languages**  
+- **Programming Languages - **  
   - Python  
   - C  
   - Java  
 
-- **Topics Covered**  
+- **Topics Covered - **  
   - Data Structures & Algorithms (DSA)  
   - Artificial Intelligence (AI)  
   - General coding snippets
